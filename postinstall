@@ -1,0 +1,5 @@
+#!/bin/sh
+
+crontab - <<EOF
+* * * * * home/dotcloud/current/jobs/timetest
+EOF
