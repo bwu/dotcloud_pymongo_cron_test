@@ -1,10 +1,9 @@
 #!/usr/bin/env python
 
-from datetime import datetime
-import pymongo
-from pymongo import Connection
 import json
 
+from datetime import datetime
+from pymongo import Connection
 
 # Open the environment file and get the name of the host and port
 with open('/home/dotcloud/environment.json') as f:
