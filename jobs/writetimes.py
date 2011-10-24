@@ -1,5 +1,6 @@
 #!/usr/bin/env python
 
+import json
 import csv
 from pymongo import Connection
 
