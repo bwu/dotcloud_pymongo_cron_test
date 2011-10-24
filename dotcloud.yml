@@ -1,4 +1,4 @@
 data:
   type: mongodb
 lang:
-  type: python-worker
+  type: python
