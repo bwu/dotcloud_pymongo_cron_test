@@ -2,6 +2,7 @@
 
 import json
 import csv
+
 from pymongo import Connection
 
 # Open the environment file and get the name of the host and port

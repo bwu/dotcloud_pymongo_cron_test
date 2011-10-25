@@ -20,3 +20,16 @@ collection = db.times
 # Give todays date as an item in a dictionary.
 today = { 'date and time' : datetime.today() }
 collection.insert(today)
+
+# Create the row writer and write the first row
+FILE_NAME = 'times.csv'
+rowWriter = csv.writer(open(FILE_NAME, 'wt'), delimiter = ",")
+firstrow = ['Word', 'Actual Date and Time']
+rowWriter.writerow(firstrow)
+
+# Writes all subsequent rows
+for time in collection.find():
+	row = []
+	row.append('Word up!')
+	row.append(time['date and time'])
+	rowWriter.writerow(row)
