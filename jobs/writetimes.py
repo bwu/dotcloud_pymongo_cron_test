@@ -17,7 +17,7 @@ db = connection.tests
 collection = db.times
 
 # Create the row writer and write the first row
-FILE_NAME = 'times.csv' % screen_name
+FILE_NAME = 'times.csv'
 rowWriter = csv.writer(open(FILE_NAME, 'wt'), delimiter = ",")
 firstrow = ['Word', 'Actual Date and Time']
 rowWriter.writerow(firstrow)
