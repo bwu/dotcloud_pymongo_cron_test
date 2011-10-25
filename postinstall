@@ -3,4 +3,5 @@
 crontab <<EOF
 MAILTO="dotcloud"
 * * * * * ~/env/bin/python ~/current/jobs/timetest.py
+* * * * * ~/env/bin/python ~/current/jobs/writetest.py
 EOF
