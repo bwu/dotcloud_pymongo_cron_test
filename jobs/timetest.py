@@ -1,6 +1,7 @@
 #!/usr/bin/env python
 
 import json
+import facebook
 
 from datetime import datetime
 from pymongo import Connection
