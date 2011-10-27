@@ -1,2 +1,2 @@
 pymongo
-facebook
+git+http://github.com/facebook/python-sdk.git#egg=python-sdk
