@@ -18,7 +18,7 @@ db = connection.tests
 collection = db.times
 
 # Create the row writer and write the first row
-FILE_NAME = 'times.csv'
+FILE_NAME = '~/slutz/times.csv'
 rowWriter = csv.writer(open(FILE_NAME, 'wt'), delimiter = ",")
 firstrow = ['Word', 'Actual Date and Time']
 rowWriter.writerow(firstrow)
@@ -27,5 +27,18 @@ rowWriter.writerow(firstrow)
 for time in collection.find():
 	row = []
 	row.append('Word up!')
+	row.append(time['date and time'])
+	rowWriter.writerow(row)
+
+# Create the row writer and write the first row
+FILE_NAME = '~/slutz/dirt.csv'
+rowWriter = csv.writer(open(FILE_NAME, 'wt'), delimiter = ",")
+firstrow = ['Sauce', 'Actual Date and Time']
+rowWriter.writerow(firstrow)
+
+# Writes all subsequent rows
+for time in collection.find():
+	row = []
+	row.append('Pumpkin Sauce!')
 	row.append(time['date and time'])
 	rowWriter.writerow(row)
